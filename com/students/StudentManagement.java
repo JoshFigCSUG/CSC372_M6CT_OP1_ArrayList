@@ -1,6 +1,7 @@
 package com.students;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class StudentManagement {
 
@@ -26,7 +27,11 @@ public class StudentManagement {
         }
 
         // Sort by name using selectionSort method and SortByName comparator
-              
+        selectionSort(studentList, new SortByName());
+        System.out.println("\nSorted by Name:");
+        for (Student student : studentList) {
+            System.out.println(student);
+        }      
 
         // Sort by roll number using selectionSort method and SortByRollno comparator
         
