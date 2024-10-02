@@ -34,7 +34,11 @@ public class StudentManagement {
         }      
 
         // Sort by roll number using selectionSort method and SortByRollno comparator
-        
+        selectionSort(studentList, new SortByRollno());
+        System.out.println("\nSorted by Roll Number:");
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
     }
 
     // Generic selection sort method that takes a list and a comparator
